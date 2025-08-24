@@ -41,11 +41,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ isDark }) => {
         <h1 className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-6 ${
           isDark ? 'text-white' : 'text-slate-900'
         }`}>
-          <span className={`${isDark? 'from-indigo-300 via-purple-300 to-indigo-300':'from-indigo-300 via-purple-300 to-indigo-600'} bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent`}>
+          <span className={`${isDark? 'from-indigo-300 via-purple-300 to-indigo-300':'from-indigo-600 via-purple-600 to-indigo-600'} bg-gradient-to-r bg-clip-text text-transparent`}>
             Freshers
           </span>
           <br />
-          <span className={`${isDark? 'from-indigo-300 via-purple-300 to-indigo-300':'from-indigo-300 via-purple-300 to-indigo-600'} bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent`}>
+          <span className={`${isDark? 'from-indigo-300 via-purple-300 to-indigo-300':'from-indigo-600 via-purple-600 to-indigo-600'} bg-gradient-to-r bg-clip-text text-transparent`}>
             Frontier
           </span>
         </h1>
@@ -54,7 +54,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ isDark }) => {
           isDark ? 'text-slate-300' : 'text-slate-600'
         }`}>
           An Ideathon to Shape the Future,{' '}
-          <span className={`${isDark? 'from-indigo-300 via-purple-300 to-indigo-300':'from-indigo-300 via-purple-300 to-indigo-600'} bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-600 bg-clip-text text-transparent font-semibold`}>
+          <span className={`${isDark? 'from-indigo-300 via-purple-300 to-indigo-300':'from-indigo-600 via-purple-600 to-indigo-600'} bg-gradient-to-r  bg-clip-text text-transparent font-semibold`}>
             One Idea at a Time
           </span>
         </p>
