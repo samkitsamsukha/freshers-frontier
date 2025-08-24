@@ -5,8 +5,6 @@ import {
   BookOpen, 
   Heart, 
   ChevronDown, 
-  ChevronRight,
-  Lightbulb
 } from 'lucide-react';
 
 interface ThemesSectionProps {
@@ -20,11 +18,9 @@ const themes = [
     icon: GraduationCap,
     color: 'from-blue-500 to-indigo-500',
     problems: [
-      'Design a peer-to-peer study group matching system for students with similar academic goals.',
-      'Create a campus navigation app that helps new students find classrooms, facilities, and services efficiently.',
-      'Develop a digital marketplace for students to buy, sell, and exchange textbooks and study materials.',
-      'Build a roommate compatibility finder using lifestyle preferences and study habits.',
-      'Design a campus event discovery platform that personalizes recommendations based on student interests.'
+      'Navigating college for the first time can be overwhelming, with students often missing updates or struggling with resource access. Imagine a solution that integrates academic, social, and campus services into a single experience to make student life effortless.',
+      'Lost devices, bags, card, IDs, etc. and unreported findings are everyday struggles. Think about how a systematic approach to lost-and-found can build trust and efficiency in campus life.',
+      'College fosters diversity, yet it can feel isolating for newcomers without support. Envision a model where peer guidance and shared experiences create a culture of inclusivity and belonging.'
     ]
   },
   {
@@ -33,11 +29,11 @@ const themes = [
     icon: Leaf,
     color: 'from-green-500 to-emerald-500',
     problems: [
-      'Create a campus waste reduction challenge that gamifies recycling and sustainable practices.',
-      'Design a shared resource platform for students to borrow and lend items instead of buying new ones.',
-      'Develop a carbon footprint tracker specifically designed for college students\' daily activities.',
-      'Build a community garden management app that connects students with sustainable food production.',
-      'Create an energy-saving competition system that encourages dormitories to reduce their consumption.'
+      'In India, solar power is abundant but adoption remains limited due to high costs, frequent maintenance, and convenience barriers, even with government subsidies. Suggest how companies can rethink models and solutions that make solar energy truly affordable, reliable, and accessible for the masses.',
+      'Despite growing awareness, college campuses still generate large amounts of plastic and food waste. Imagine rethinking everyday habits—like packaging, meals, and events—to create a culture of zero waste.',
+      'While recycling bins exist, their effectiveness depends entirely on consistent student engagement. Envision ways to make recycling more visible, rewarding, and habitual.',
+      'Sustainability requires collective participation, not just rules. Consider how gamification, peer influence, or reward systems could make green practices part of student identity.',
+      'Fast fashion drives overproduction and landfill pollution. Suggest circular economy models can transform clothing consumption into a sustainable, long-term practice.'
     ]
   },
   {
@@ -46,11 +42,9 @@ const themes = [
     icon: BookOpen,
     color: 'from-purple-500 to-violet-500',
     problems: [
-      'Design a personalized learning path generator that adapts to different learning styles and paces.',
-      'Create a collaborative note-taking platform where students can share and build upon each other\'s notes.',
-      'Develop a skill-gap identifier that helps students discover and bridge knowledge gaps in their field.',
-      'Build a virtual study buddy system that uses AI to provide study reminders and motivation.',
-      'Design a peer tutoring marketplace that connects students who need help with those who excel.'
+      'Text-heavy study material makes it hard to visualize concepts in physics, chemistry, or engineering. Reflect on AR/VR or simulation tools that can make abstract concepts tangible.',
+      'Time management is a skill rarely taught but desperately needed. Think of how an adaptive digital mentor could help students build habits for productivity.',
+      'Students struggle with different learning speeds—some lag behind, others get bored. Think about on how technology can bridge this gap while keeping learning inclusive.'
     ]
   },
   {
@@ -59,11 +53,10 @@ const themes = [
     icon: Heart,
     color: 'from-pink-500 to-rose-500',
     problems: [
-      'Create a mood tracking app specifically designed for the unique stresses of college life.',
-      'Design a peer support network that anonymously connects students facing similar challenges.',
-      'Develop a stress management toolkit with quick, accessible techniques for busy students.',
-      'Build a sleep optimization system that helps students establish healthy sleep patterns.',
-      'Create a campus mental health resource finder that provides immediate access to support services.'
+      'Rising costs of education and living add significant mental stress to students, especially those from modest backgrounds. How might institutions and communities reduce this financial burden\'s psychological toll?',
+      'With students spending hours on screens for lectures, assignments, and entertainment, digital burnout is becoming common. Yet, reducing screen time feels unrealistic. How can solutions help students maintain digital balance without disrupting academics or social life?',
+      'The fear of failure holds back many students from trying new things. Reflect on how campus communities can become safer spaces for experimentation.',
+      'Despite being surrounded by people, many students feel lonely and disconnected. First-years and introverts face this most. How might we design inclusive initiatives that create authentic peer bonds and belonging?'
     ]
   }
 ];
@@ -94,7 +87,7 @@ export const ThemesSection: React.FC<ThemesSectionProps> = ({ isDark }) => {
           <p className={`text-xl max-w-3xl mx-auto ${
             isDark ? 'text-slate-300' : 'text-slate-600'
           }`}>
-            Choose from four exciting themes, each with five unique problem statements designed to spark your creativity.
+            Choose from four exciting themes, each with unique problem statements designed to spark your creativity.
           </p>
         </div>
 
@@ -131,7 +124,7 @@ export const ThemesSection: React.FC<ThemesSectionProps> = ({ isDark }) => {
                       <p className={`text-sm ${
                         isDark ? 'text-slate-400' : 'text-slate-500'
                       }`}>
-                        Click to explore 5 problem statements
+                        Click to explore problem statements
                       </p>
                     </div>
                   </div>
@@ -172,15 +165,6 @@ export const ThemesSection: React.FC<ThemesSectionProps> = ({ isDark }) => {
               </div>
             );
           })}
-        </div>
-
-        <div className="text-center mt-12">
-          <div className={`inline-flex items-center space-x-2 px-6 py-3 rounded-full ${
-            isDark ? 'bg-slate-800 text-slate-300' : 'bg-slate-100 text-slate-600'
-          }`}>
-            <Lightbulb size={16} />
-            <span className="text-sm font-medium">Each problem statement is designed to be solved in ≤50 words</span>
-          </div>
         </div>
       </div>
     </section>
