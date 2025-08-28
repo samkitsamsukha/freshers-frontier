@@ -30,7 +30,7 @@ export const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex flex-row h-16 gap-4">
-            <img
+            {/* <img
               src={'/src/rvce.png'}
               alt="RVCE Logo"
               className={`w-40 ${isDark ? 'invert' : ''}`}
@@ -40,7 +40,7 @@ export const Header: React.FC<HeaderProps> = ({ isDark, toggleTheme }) => {
               src={'/src/cc.png'}
               alt="RVCE Logo"
               className={`w-20 scale-150 ${isDark ? '' : 'invert'}`}
-            />
+            /> */}
           </div>
 
           {/* Desktop Navigation */}
